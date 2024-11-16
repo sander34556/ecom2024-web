@@ -13,7 +13,7 @@ import Dashboard from '../pages/admin/Dashboard'
 import Category from '../pages/admin/Category'
 import Product from '../pages/admin/Product';
 import Manage from '../pages/admin/Manage';
-import Layoutuser from '../layouts/Layoutuser';
+import LayoutUser from '../layouts/LayoutUser';
 import HomeUser from '../pages/user/HomeUser';
 import ProtectRouteUser from './ProtectRouteUser';
 import ProtectRouteAdmin from './ProtectRouteAdmin';
@@ -53,7 +53,7 @@ const router = createBrowserRouter([
     {
         path: '/user',
         // element: <Layoutuser />,
-        element: <ProtectRouteUser element={<Layoutuser />} />,
+        element: <ProtectRouteUser element={<LayoutUser />} />,
         children: [
             { index: true, element: <HomeUser /> },
             { path: 'payment', element: <Payment /> },
